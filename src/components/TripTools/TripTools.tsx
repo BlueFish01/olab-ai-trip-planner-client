@@ -1,28 +1,27 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "../ui/card";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import LandmarkCard from "./LandmarkCard";
+import LandmarkCardContainer from "./LandmarkCardContainer";
+import { Button } from "../ui/button";
 
 function TripTools() {
   return (
     <div className="w-2/5">
-    <Card>
-      <CardHeader>
-        <CardTitle>TripTools</CardTitle>
-        <CardDescription>Card Description</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <p>Card Content</p>
-      </CardContent>
-      <CardFooter>
-        <p>Card Footer</p>
-      </CardFooter>
-    </Card>
+      <Card className="flex flex-col h-full">
+        <CardHeader className="items-start">
+          <Badge variant="secondary">4 Nov,2024 - 6 Nov,2024</Badge>
+          <CardTitle>3 Days trips in Tokyo</CardTitle>
+        </CardHeader>
+        <CardContent className="flex flex-col h-full">
+          <LandmarkCardContainer
+            tripData={[<><LandmarkCard /><LandmarkCard /></>, <LandmarkCard />, <LandmarkCard />]}
+          />
+        </CardContent>
+        <CardFooter className="flex w-full justify-end item-end">
+          <Button>Next</Button>
+        </CardFooter>
+      </Card>
     </div>
   );
 }
