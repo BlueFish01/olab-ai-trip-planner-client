@@ -3,13 +3,11 @@
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import LandmarkCard from "./LandmarkCard";
 import LandmarkCardContainer from "./LandmarkCardContainer";
 import { Button } from "../ui/button";
 import { useSelector } from "react-redux";
 import { RootState } from "@/lib/store";
 import { format } from "date-fns"
-import { ScrollArea } from "@/components/ui/scroll-area"
 
 function TripTools() {
   const { startDate, endDate, numberOfDay, city, tripPlan } = useSelector((state: RootState) => {
