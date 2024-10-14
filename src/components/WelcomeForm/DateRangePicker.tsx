@@ -1,7 +1,6 @@
 'use client'
 
-import { useState } from "react"
-import { addDays, format } from "date-fns"
+import { format } from "date-fns"
 import { Calendar as CalendarIcon } from "lucide-react"
 import { DateRange } from "react-day-picker"
  
@@ -13,17 +12,18 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { Dispatch, SetStateAction } from "react"
 
 interface DateRangePickerProps {
-    
+    date:DateRange | undefined
+    setDate: Dispatch<SetStateAction<DateRange | undefined>>
 }
 
 function DateRangePicker({
+    date,
+    setDate
   }: DateRangePickerProps) {
-    const [date, setDate] = useState<DateRange | undefined>({
-        from: undefined,
-        to: undefined,
-      })
+
   return (
     <div className="grid gap-2 w-full">
       <Popover>

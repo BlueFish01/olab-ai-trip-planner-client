@@ -6,7 +6,9 @@
       "content": "Tsukiji Outer Market (築地場外市場, Tsukiji Jōgai Shijō) is a district adjacent to the site of the former Tsukiji Wholesale Market. It consists of a few blocks of wholesale and retail shops, as well as restaurants crowded along narrow lanes. Here you can find fresh and processed seafood and produce alongside food-related goods such as knives. A visit to Tsukiji Outer Market is best combined with a fresh sushi breakfast or lunch at one of the local restaurants, which typically open from 5:00 in the morning to around noon or early afternoon. Because most of the fish served and sold at Tsukiji Outer Market is delivered directly from Toyosu Market, it is one of the best places in Tokyo to enjoy fresh seafood.",
       "city": "Tokyo",
       "url": "",
-      "imageUrl": ["https://www.japan-guide.com/g18/3021_05.jpg"]
+      "imageUrl": [
+        "https://www.japan-guide.com/g18/3021_05.jpg"
+      ]
     },
     {
       "name": "Tokyo Imperial Palace",
@@ -14,7 +16,9 @@
       "content": "The current Imperial Palace (皇居, Kōkyo) is located on the former site of Edo Castle, a large park area surrounded by moats and massive stone walls in the center of Tokyo, a short walk from Tokyo Station. It is the residence of Japan's Imperial Family. Edo Castle used to be the seat of the Tokugawa shogun who ruled Japan from 1603 until 1867. In 1868, the shogunate was overthrown, and the country's capital and imperial residence were moved from Kyoto to Tokyo. In 1888 construction of a new Imperial Palace was completed. The palace was once destroyed during World War Two, and rebuilt in the same style, afterwards.",
       "city": "Tokyo",
       "url": "",
-      "imageUrl": ["https://www.japan-guide.com/g18/740/3017_01.jpg"]
+      "imageUrl": [
+        "https://www.japan-guide.com/g18/740/3017_01.jpg"
+      ]
     }
   ],
   "2": [
@@ -24,7 +28,9 @@
       "content": "Located between the Imperial Palace and Tokyo Station, Marunouchi (丸の内) is one of Japan's most prestigious business districts. During the Edo Period (1603-1868), Marunouchi (literally 'within the enclosure') was located within the outer moats of Edo Castle and contained the residences of some of Japan's most powerful feudal lords. Together with neighboring Otemachi, Marunouchi is now home to the headquarters of many of Japan's most powerful companies, particularly from the financial sector. Over the past decades, Marunouchi has been receiving a major facelift, led by the Mitsubishi Estate company, which owns a lot of the land in the district. Many older office buildings were replaced by new skyscrapers with offices on their upper floors and a variety of shops and restaurants on their lower floors. These newly opened shopping and dining complexes have revitalized the formerly unexciting business district and are drawing an increased number of non-business visitors and tourists.",
       "city": "Tokyo",
       "url": "",
-      "imageUrl": ["https://www.japan-guide.com/g22/740/3037_01.jpg"]
+      "imageUrl": [
+        "https://www.japan-guide.com/g22/740/3037_01.jpg"
+      ]
     },
     {
       "name": "Sensoji Temple",
@@ -32,7 +38,9 @@
       "content": "Sensoji (浅草寺, Sensōji, also known as Asakusa Kannon Temple) is a Buddhist temple located in Asakusa. It is one of Tokyo's most colorful and popular temples. The legend says that in the year 628, two brothers fished a statue of Kannon, the goddess of mercy, out of the Sumida River, and even though they put the statue back into the river, it always returned to them. Consequently, Sensoji was built nearby for the goddess of Kannon. The temple was completed in 645, making it Tokyo's oldest temple.",
       "city": "Tokyo",
       "url": "",
-      "imageUrl": ["https://www.japan-guide.com/g18/740/3001_01.jpg"]
+      "imageUrl": [
+        "https://www.japan-guide.com/g18/740/3001_01.jpg"
+      ]
     }
   ],
   "3": [
@@ -42,7 +50,9 @@
       "content": "The Tokyo Skytree (東京スカイツリー) is a television broadcasting tower and landmark of Tokyo. It is the centerpiece of the Tokyo Skytree Town in the Sumida City Ward, not far away from Asakusa. With a height of 634 meters (634 can be read as `Musashi`, a historic name of the Tokyo Region), it is the tallest structure in Japan and was the second tallest in the world at the time of its completion. A large shopping complex with an aquarium is located at its base.",
       "city": "Tokyo",
       "url": "",
-      "imageUrl": ["https://www.japan-guide.com/g18/740/3064_01a.jpg"]
+      "imageUrl": [
+        "https://www.japan-guide.com/g18/740/3064_01a.jpg"
+      ]
     }
   ]
 }

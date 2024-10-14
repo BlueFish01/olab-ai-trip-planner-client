@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
-import * as initTripMockData from "./initTripMock.json"
+import initTripMockData from "./initTripMock.json"
 
 export interface LandmarkObject {
     name: string
@@ -7,8 +7,8 @@ export interface LandmarkObject {
     content: string
     city: string
     location?: string
-    url?: string
-    imageUrl?: string[]
+    url: string
+    imageUrl: string[]
     type?: string[]
 }
 
@@ -17,7 +17,7 @@ export interface DayPlan {
 }
 
 export interface TripState {
-    city: string
+    city: string[]
     startDate?: Date
     endDate?: Date
     numberOfDay: number
@@ -25,7 +25,7 @@ export interface TripState {
 }
 
 const initialState:TripState = {
-    city: '',
+    city: [],
     startDate: undefined,
     endDate: undefined,
     numberOfDay: 0,
@@ -41,7 +41,10 @@ const tripSlice = createSlice({
           initTripAsync.fulfilled,
           (state, action: PayloadAction<TripState>) => {
             console.log('init trip api called', action.payload)
-            state = action.payload
+            return {
+                ...state,
+                ...action.payload,
+            };
           }
         )
     }
@@ -49,10 +52,10 @@ const tripSlice = createSlice({
 
 export const initTripAsync = createAsyncThunk(
     "trip/initTripAsync",
-    async ({ city, numberOfDay, startDate, endDate }: { city: string; numberOfDay: number; startDate: Date, endDate:Date }) => {
+    async ({ city, numberOfDay, startDate, endDate }: { city: string[]; numberOfDay: number; startDate: Date, endDate:Date }) => {
         await new Promise((resolve) => setTimeout(resolve, 2000));
-        const tripPlan: DayPlan = initTripMockData
-        return {tripPlan, numberOfDay, startDate, endDate, city};
+        const tripPlan: DayPlan = initTripMockData as DayPlan
+        return { tripPlan, numberOfDay, startDate, endDate, city };
     }
 );
 
